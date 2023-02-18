@@ -336,7 +336,7 @@ export default function Experience() {
           mass={5}
           colliders="ball"
         >
-          <mesh castShadow scale={1.5}>
+          <mesh castShadow scale={1.35}>
             <sphereGeometry />
             <meshStandardMaterial color="mediumPurple" />
           </mesh>
@@ -353,8 +353,8 @@ export default function Experience() {
           mass={5}
           colliders="hull"
         >
-          <mesh castShadow scale={1.25}>
-            <cylinderGeometry />
+          <mesh castShadow scale={1.4}>
+            <cylinderGeometry args={[1, 1, 1]} />
             <meshStandardMaterial color="mediumPurple" />
           </mesh>
         </RigidBody>
